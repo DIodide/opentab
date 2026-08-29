@@ -1,0 +1,27 @@
+{
+  "name": "opentab",
+  "version": "0.2.0",
+  "description": "Turn your Mac into a personal browser server: spin up Chrome tabs and hand out CDP websocket links that agents and humans can drive together.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "opentab": "bin/opentab.js"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "start": "node src/cli.ts serve",
+    "test": "node --test \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "commander": "^15.0.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/ws": "^8.18.0",
+    "typescript": "^5.7.0"
+  }
+}
